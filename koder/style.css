@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+/* Skyver innholdet ned så det ikke blir skjult av header */
+body {
+    padding-top: 80px;
+}
