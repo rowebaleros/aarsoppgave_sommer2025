@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 def get_db_connection():
     return mysql.connector.connect(
-        host="10.2.1.10",
+        host="10.2.1.232",
         user="Rowe2007",
         password="Rowe2007",
         database="tictactoedb"
@@ -18,6 +18,10 @@ def index_page():
 @app.route("/howto")
 def how_page():
     return render_template('howto.html')
+
+@app.route("/eksempel")
+def eksempel_page():
+    return render_template('eksempel.html')
 
 @app.route("/get_scores", methods=["GET"])
 def get_scores():
